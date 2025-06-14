@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: wheat;
+    color: #333;
+}
+main{
+    min-height: 400px;
+    width: 500px;
+    border-radius: 8px;
+    background: aliceblue;
+}
+main h2{
+    justify-self: center;
+    margin-top: 20px;
+    font-size: 2pc;
+}
+main .amount{
+    justify-self: center;
+    min-height: 50px;
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+}
+.amount label{
+    display: block;
+    font-size: 1.5pc;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.amount input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    background: #ededed;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    font-size: 1.3pc;
+}
+.convert{
+    width: 100%;
+    display: flex;
+    min-height: 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+.convert img{
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+}
+.convert .dropdown{
+    height: 40px;
+    width: 100%;
+    border: 1px solid #111;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.convert select{
+    height: 100%;
+    padding: 5px;
+    font-size: 1.2pc;
+    border-radius: 5px;
+    border: none;
+}
+.convert select option{
+    border: none;
+    background: #111;
+    color: white;
+}
+.convert i{
+    font-size: 2.5pc;
+}
+.convert h5{
+    font-size: 1.2pc;
+    margin-bottom: 5px;
+}
+main p{
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1.4pc;
+}
+main .btn{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+main .convert-btn{
+    justify-self: center;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background: purple;
+    color: white;
+    font-size: 2pc;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-Converter</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Currency Converter</h2>
+        <div class="amount">
+            <label for="input">Amount</label>
+            <input type="text" id="input" placeholder="Enter amount">
+        </div>
+
+        <div class="convert">
+          <div class="from">
+              <h5>From</h5>
+           <div class="dropdown">
+               <img src="data:image/png;base64,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" alt="">
+            <select>
+            </select>
+           </div>
+          </div>
+
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="to">
+                <h5>To</h5>
+              <div class="dropdown">
+                  <img src="data:image/png;base64,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" alt="">
+            <select>
+            </select>
+              </div>
+          </div>
+        </div>
+
+        <p>nothing for now</p>
+
+        <div class="btn">
+            <button class="convert-btn">Convert</button>
+        </div>
+    </main>
+
+ <script src="codes.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>
