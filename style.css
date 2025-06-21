@@ -6,6 +6,7 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
@@ -21,7 +22,9 @@ main{
 main h2{
     justify-self: center;
     margin-top: 20px;
-    font-size: 2pc;
+    font-size: 2.2pc;
+    color: purple;
+    word-spacing: 8px;
 }
 main .amount{
     justify-self: center;
@@ -112,4 +115,44 @@ main .convert-btn{
     font-size: 2pc;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 93vh;
+    }
+    main{
+        width: 90%;
+        min-height: 300px;
+    }
+    main h2{
+        font-size: 2pc;
+    }
+    main .amount input{
+        font-size: 1.2pc;
+    }
+    .convert img{
+        width: 40px;
+        height: 30px;
+    }
+    .convert i{
+        font-size: 2pc;
+    }
+    main p{
+        font-size: 1.2pc;
+    }
+    main .btn{
+        height: 50px;
+    }
+    main .convert-btn{
+        height: 40px;
+        font-size: 1.5pc;
+    }
+   
+}
+
+.outro{
+    position: absolute;
+ font-size: 1pc;
+ bottom: 15px;
 }

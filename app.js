@@ -35,10 +35,13 @@ const updateFlag = (element) => {
 
 const btn = document.querySelector('button');
 const final = document.querySelector('.finalValue');
+    final.innerText = `? ${fromCurrency.value} = ? ${toCurrency.value}`;
+
 
 btn.onclick = async (e) => {
      e.preventDefault();
      let amount = document.querySelector('.amount input');
+     
 if(amount.value === ''  || amount.value <=0){
     amount.value = 1;
 }
